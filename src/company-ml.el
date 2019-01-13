@@ -53,8 +53,9 @@
   "The prefix command for the MarkLogic Javascript backend."
   (save-excursion
     (let ((end   (point))
-          (start (point-min)))
-      (when (re-search-backward "[^.a-zA-Z0-9]" company-ml-max-prefix-length t)
+          (start (point-min))
+          (limit (min company-ml-max-prefix-length (point-min))))
+      (when (re-search-backward "[^.a-zA-Z0-9]" limit t)
         (setq start (1+ (point))))
       (let ((res (buffer-substring start end)))
         (when (and (>= (length res) 3)
@@ -91,8 +92,9 @@
   "The prefix command for the MarkLogic XQuery backend."
   (save-excursion
     (let ((end   (point))
-          (start (point-min)))
-      (when (re-search-backward "[^-:a-zA-Z0-9]" company-ml-max-prefix-length t)
+          (start (point-min))
+          (limit (min company-ml-max-prefix-length (point-min))))
+      (when (re-search-backward "[^-:a-zA-Z0-9]" limit t)
         (setq start (1+ (point))))
       (let ((res (buffer-substring start end)))
         (when (string-match company-ml-xqy-prefix-re res)
