@@ -43,6 +43,15 @@ If you use `use-package`, you can also use the following:
       (add-to-list 'company-backends 'company-ml-sjs)
       (add-to-list 'company-backends 'company-ml-xqy))
 
+## Screenshots
+
+In Javascript:
+
+![Javascript sample](doc/screenshot-sjs.png)
+
+In XQuery:
+
+![XQuery sample](doc/screenshot-xqy.png)
 
 ## Dev notes
 
