@@ -59,3 +59,6 @@ See `tools/make-tables.xq` in order to generate the XQuery and JavaScript tables
 
 **TODO**: Add the docstring for each function (see `company-backends` docstring
 for more info.)
+
+**TODO**: Is there anything to do here to integrate smoothly with
+[company-box](https://github.com/sebastiencs/company-box)?
