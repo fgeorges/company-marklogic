@@ -3,7 +3,7 @@
 Company backend for MarkLogic functions.
 
 Using the Company Mode for Emacs, it suggests completions for MarkLogic
-functions, as you type, both for Javascript and XQuery.
+functions, as you type, both for JavaScript and XQuery.
 
 ## Install
 
@@ -19,11 +19,11 @@ your init file (AKA your `~/.emacs` file):
     (add-to-list 'company-backends 'company-ml-sjs)
     (add-to-list 'company-backends 'company-ml-xqy)
     
-    ;; always use Company in Javascript and XQuery modes
+    ;; always use Company in JavaScript and XQuery modes
     (add-hook 'js-mode-hook     'company-mode)
     (add-hook 'xquery-mode-hook 'company-mode)
 
-If you want to cherry-pick the Company backends to activate in Javascript and/or
+If you want to cherry-pick the Company backends to activate in JavaScript and/or
 XQuery modes, use something like the following instead, for the corresponding
 hooks:
 
@@ -45,9 +45,9 @@ If you use `use-package`, you can also use the following:
 
 ## Screenshots
 
-In Javascript:
+In JavaScript:
 
-![Javascript sample](doc/screenshot-sjs.png)
+![JavaScript sample](doc/screenshot-sjs.png)
 
 In XQuery:
 
@@ -55,7 +55,7 @@ In XQuery:
 
 ## Dev notes
 
-See `tools/make-tables.xq` in order to generate the XQuery and Javascript tables.
+See `tools/make-tables.xq` in order to generate the XQuery and JavaScript tables.
 
 **TODO**: Add the docstring for each function (see `company-backends` docstring
 for more info.)

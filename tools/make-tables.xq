@@ -2,12 +2,12 @@ xquery version "3.1";
 
 (: Generate the tables for company-marklogic.el.
  :
- : There are 2 versions of the tables, one for XQuery and the other one for Javascript.
+ : There are 2 versions of the tables, one for XQuery and the other one for JavaScript.
  : It depends on the list of functions available at http://docs.marklogic.com/.  Adapt
  : $dir depending on where you downloaded it.
  :
  : Executing the module will produce text.  Replace the last line to choose between
- : either the XQuery or Javascript tables.  The result is to be pasted in the file
+ : either the XQuery or JavaScript tables.  The result is to be pasted in the file
  : company-marklogic-xqy.el (resp. company-marklogic-sjs.el.)  It is the entire content
  : of the corresponding file.
  :)
@@ -138,6 +138,6 @@ declare function local:format-tables($type as xs:string, $sep as xs:string, $lab
 
 (:
 local:format-tables('xqy', ':', 'XQuery')
-local:format-tables('sjs', '.', 'Javascript')
+local:format-tables('sjs', '.', 'JavaScript')
 :)
 local:format-tables('xqy', ':', 'XQuery')

@@ -1,4 +1,4 @@
-;;; company-ml-sjs.el --- Javascript tables for Company MarkLogic backend.
+;;; company-ml-sjs.el --- JavaScript tables for Company MarkLogic backend.
 
 ;; See company-ml.el for copyright info.
 

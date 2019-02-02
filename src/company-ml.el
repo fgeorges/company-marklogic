@@ -16,7 +16,7 @@
 ;;
 ;;; Commentary:
 ;;
-;; Provide a Company backend for MarkLogic XQuery and Javascript functions.
+;; Provide a Company backend for MarkLogic XQuery and JavaScript functions.
 
 ;;; Code:
 
@@ -39,7 +39,7 @@
   (concat "^\\(" company-ml-prefix-re "\\):[^:]*"))
 
 (defun company-ml-sjs (command &optional arg &rest ignored)
-  "Company backend for MarkLogic Javascript functions."
+  "Company backend for MarkLogic JavaScript functions."
   (interactive (list 'interactive))
   (case command
     (interactive     (company-begin-backend 'company-ml-sjs-backend))
@@ -50,7 +50,7 @@
                      (backward-char))))
 
 (defun company-ml-sjs-prefix ()
-  "The prefix command for the MarkLogic Javascript backend."
+  "The prefix command for the MarkLogic JavaScript backend."
   (save-excursion
     (let ((end   (point))
           (start (point-min))
@@ -65,7 +65,7 @@
           res)))))
 
 (defun company-ml-sjs-candidates (prefix)
-  "The candidates command for the MarkLogic Javascript backend."
+  "The candidates command for the MarkLogic JavaScript backend."
   (let* ((tokens (split-string prefix "\\."))
          (first  (car tokens))
          (second (car (cdr tokens))))
