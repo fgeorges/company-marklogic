@@ -40,7 +40,9 @@
   (concat "^\\(" company-ml-prefix-re "\\):[^:]*"))
 
 (defun company-ml-sjs (command &optional arg &rest ignored)
-  "Company backend for MarkLogic JavaScript functions."
+  "Company backend for MarkLogic JavaScript functions.
+
+COMMAND, ARG and IGNORED are the arguments received from Company."
   (interactive (list 'interactive))
   (case command
     (interactive     (company-begin-backend 'company-ml-sjs-backend))
@@ -66,7 +68,9 @@
           res)))))
 
 (defun company-ml-sjs-candidates (prefix)
-  "The candidates command for the MarkLogic JavaScript backend."
+  "The candidates command for the MarkLogic JavaScript backend.
+
+PREFIX is the argument received from Company, for the command `candidates'."
   (let* ((tokens (split-string prefix "\\."))
          (first  (car tokens))
          (second (car (cdr tokens))))
@@ -79,7 +83,9 @@
             (cdr (assoc (intern first) company-ml-sjs-functions)))))))
 
 (defun company-ml-xqy (command &optional arg &rest ignored)
-  "Company backend for MarkLogic XQuery functions."
+  "Company backend for MarkLogic XQuery functions.
+
+COMMAND, ARG and IGNORED are the arguments received from Company."
   (interactive (list 'interactive))
   (case command
     (interactive     (company-begin-backend 'company-ml-xqy-backend))
@@ -102,7 +108,9 @@
           res)))))
 
 (defun company-ml-xqy-candidates (prefix)
-  "The candidates command for the MarkLogic XQuery backend."
+  "The candidates command for the MarkLogic XQuery backend.
+
+PREFIX is the argument received from Company, for the command `candidates'."
   (let* ((tokens (split-string prefix ":"))
          (first  (car tokens))
          (second (car (cdr tokens))))
