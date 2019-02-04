@@ -10,9 +10,10 @@
 ;;
 ;;; Package info:
 ;;
-;; Package-Requires: ((company "0.9"))
+;; Package-Requires: ((emacs "24.4") (company "0.9"))
 ;; Keywords: company marklogic completion xquery javascript
 ;; Homepage: https://github.com/fgeorges/company-ml
+;; Version: 1.0
 ;;
 ;;; Commentary:
 ;;
@@ -112,7 +113,6 @@
 
 (provide 'company-ml)
 
-
 ;; ------------------------------------------------------------------------ ;;
 ;;  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS COMMENT.               ;;
 ;;                                                                          ;;
@@ -132,3 +132,5 @@
 ;;                                                                          ;;
 ;;  Contributor(s): none.                                                   ;;
 ;; ------------------------------------------------------------------------ ;;
+
+;;; company-ml.el ends here
