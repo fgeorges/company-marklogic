@@ -1,6 +1,15 @@
 ;;; company-ml-xqy.el --- XQuery tables for Company MarkLogic backend.
 
-;; See company-ml.el for copyright info.
+;;; Package info:
+;;
+;; Homepage: https://github.com/fgeorges/company-ml
+;; Version: 1.0
+;;
+;;; Commentary:
+;;
+;; Tables for the Company backend for MarkLogic XQuery functions.
+;;
+;; See company-ml.el for copyright and all info.
 
 (defconst company-ml-xqy-functions-admin
   '("appserver-add-module-location"
@@ -3534,3 +3543,5 @@
     (xs . ,(funcall addp "xs" company-ml-xqy-functions-xs)))))
 
 (provide 'company-ml-xqy)
+
+;;; company-ml-xqy.el ends here

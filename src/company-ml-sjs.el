@@ -1,5 +1,14 @@
 ;;; company-ml-sjs.el --- JavaScript tables for Company MarkLogic backend.
 
+;;; Package info:
+;;
+;; Homepage: https://github.com/fgeorges/company-ml
+;; Version: 1.0
+;;
+;;; Commentary:
+;;
+;; Tables for the Company backend for MarkLogic JavaScript functions.
+;;
 ;; See company-ml.el for copyright info.
 
 (defconst company-ml-sjs-functions-admin
@@ -3534,3 +3543,5 @@
     (xs . ,(funcall addp "xs" company-ml-sjs-functions-xs)))))
 
 (provide 'company-ml-sjs)
+
+;;; company-ml-sjs.el ends here
