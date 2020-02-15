@@ -29,9 +29,8 @@
 (defconst company-marklogic-max-prefix-length 100)
 
 (defconst company-marklogic-prefix-re
-  (string-join
-   (mapcar (lambda (x) (symbol-name (car x))) company-marklogic-sjs-functions)
-   "\\|"))
+  (regexp-opt
+   (mapcar (lambda (x) (symbol-name (car x))) company-marklogic-sjs-functions)))
 
 (defconst company-marklogic-sjs-prefix-re
   (concat "^\\(" company-marklogic-prefix-re "\\)\\.[^.]*"))
