@@ -1,7 +1,7 @@
-;;; company-ml.el --- Company backend for MarkLogic functions.
+;;; company-marklogic.el --- Company backend for MarkLogic functions.
 
 ;; ************************************************************************ ;;
-;;  File:       company-ml.el                                               ;;
+;;  File:       company-marklogic.el                                        ;;
 ;;  Author:     F. Georges - fgeorges.org - h2o.consulting                  ;;
 ;;  Date:       2018-12-25                                                  ;;
 ;;  Tags:                                                                   ;;
@@ -12,7 +12,7 @@
 ;;
 ;; Package-Requires: ((emacs "24.4") (company "0.9"))
 ;; Keywords: company marklogic completion xquery javascript
-;; Homepage: https://github.com/fgeorges/company-ml
+;; Homepage: https://github.com/fgeorges/company-marklogic
 ;; Version: 1.0
 ;;
 ;;; Commentary:
@@ -22,52 +22,52 @@
 ;;; Code:
 
 (require 'company)
-(require 'company-ml-sjs)
-(require 'company-ml-xqy)
+(require 'company-marklogic-sjs)
+(require 'company-marklogic-xqy)
 
 ;; TODO: Set from the longest existing function name, instead of a magic number.
-(defconst company-ml-max-prefix-length 100)
+(defconst company-marklogic-max-prefix-length 100)
 
-(defconst company-ml-prefix-re
+(defconst company-marklogic-prefix-re
   (string-join
-   (mapcar (lambda (x) (symbol-name (car x))) company-ml-sjs-functions)
+   (mapcar (lambda (x) (symbol-name (car x))) company-marklogic-sjs-functions)
    "\\|"))
 
-(defconst company-ml-sjs-prefix-re
-  (concat "^\\(" company-ml-prefix-re "\\)\\.[^.]*"))
+(defconst company-marklogic-sjs-prefix-re
+  (concat "^\\(" company-marklogic-prefix-re "\\)\\.[^.]*"))
 
-(defconst company-ml-xqy-prefix-re
-  (concat "^\\(" company-ml-prefix-re "\\):[^:]*"))
+(defconst company-marklogic-xqy-prefix-re
+  (concat "^\\(" company-marklogic-prefix-re "\\):[^:]*"))
 
-(defun company-ml-sjs (command &optional arg &rest ignored)
+(defun company-marklogic-sjs (command &optional arg &rest ignored)
   "Company backend for MarkLogic JavaScript functions.
 
 COMMAND, ARG and IGNORED are the arguments received from Company."
   (interactive (list 'interactive))
   (case command
-    (interactive     (company-begin-backend 'company-ml-sjs-backend))
+    (interactive     (company-begin-backend 'company-marklogic-sjs-backend))
     (prefix          (when (eq major-mode 'js-mode)
-                       (company-ml-sjs-prefix)))
-    (candidates      (company-ml-sjs-candidates arg))
+                       (company-marklogic-sjs-prefix)))
+    (candidates      (company-marklogic-sjs-candidates arg))
     (post-completion (insert "()")
                      (backward-char))))
 
-(defun company-ml-sjs-prefix ()
+(defun company-marklogic-sjs-prefix ()
   "The prefix command for the MarkLogic JavaScript backend."
   (save-excursion
     (let ((end   (point))
           (start (point-min))
-          (limit (min company-ml-max-prefix-length (point-min))))
+          (limit (min company-marklogic-max-prefix-length (point-min))))
       (when (re-search-backward "[^.a-zA-Z0-9]" limit t)
         (setq start (1+ (point))))
       (let ((res (buffer-substring start end)))
         (when (and (>= (length res) 3)
                    (or (string-prefix-p res "require")
                        (string-prefix-p res "declareUpdate")
-                       (string-match company-ml-sjs-prefix-re res)))
+                       (string-match company-marklogic-sjs-prefix-re res)))
           res)))))
 
-(defun company-ml-sjs-candidates (prefix)
+(defun company-marklogic-sjs-candidates (prefix)
   "The candidates command for the MarkLogic JavaScript backend.
 
 PREFIX is the argument received from Company, for the command `candidates'."
@@ -80,34 +80,34 @@ PREFIX is the argument received from Company, for the command `candidates'."
           ((= (length tokens) 2)
            (seq-filter
             (lambda (name) (string-prefix-p prefix name))
-            (cdr (assoc (intern first) company-ml-sjs-functions)))))))
+            (cdr (assoc (intern first) company-marklogic-sjs-functions)))))))
 
-(defun company-ml-xqy (command &optional arg &rest ignored)
+(defun company-marklogic-xqy (command &optional arg &rest ignored)
   "Company backend for MarkLogic XQuery functions.
 
 COMMAND, ARG and IGNORED are the arguments received from Company."
   (interactive (list 'interactive))
   (case command
-    (interactive     (company-begin-backend 'company-ml-xqy-backend))
+    (interactive     (company-begin-backend 'company-marklogic-xqy-backend))
     (prefix          (when (eq major-mode 'xquery-mode)
-                       (company-ml-xqy-prefix)))
-    (candidates      (company-ml-xqy-candidates arg))
+                       (company-marklogic-xqy-prefix)))
+    (candidates      (company-marklogic-xqy-candidates arg))
     (post-completion (insert "()")
                      (backward-char))))
 
-(defun company-ml-xqy-prefix ()
+(defun company-marklogic-xqy-prefix ()
   "The prefix command for the MarkLogic XQuery backend."
   (save-excursion
     (let ((end   (point))
           (start (point-min))
-          (limit (min company-ml-max-prefix-length (point-min))))
+          (limit (min company-marklogic-max-prefix-length (point-min))))
       (when (re-search-backward "[^-:a-zA-Z0-9]" limit t)
         (setq start (1+ (point))))
       (let ((res (buffer-substring start end)))
-        (when (string-match company-ml-xqy-prefix-re res)
+        (when (string-match company-marklogic-xqy-prefix-re res)
           res)))))
 
-(defun company-ml-xqy-candidates (prefix)
+(defun company-marklogic-xqy-candidates (prefix)
   "The candidates command for the MarkLogic XQuery backend.
 
 PREFIX is the argument received from Company, for the command `candidates'."
@@ -117,9 +117,9 @@ PREFIX is the argument received from Company, for the command `candidates'."
     (when (= (length tokens) 2)
       (seq-filter
        (lambda (name) (string-prefix-p prefix name))
-       (cdr (assoc (intern first) company-ml-xqy-functions))))))
+       (cdr (assoc (intern first) company-marklogic-xqy-functions))))))
 
-(provide 'company-ml)
+(provide 'company-marklogic)
 
 ;; ------------------------------------------------------------------------ ;;
 ;;  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS COMMENT.               ;;
@@ -141,4 +141,4 @@ PREFIX is the argument received from Company, for the command `candidates'."
 ;;  Contributor(s): none.                                                   ;;
 ;; ------------------------------------------------------------------------ ;;
 
-;;; company-ml.el ends here
+;;; company-marklogic.el ends here

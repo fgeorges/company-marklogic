@@ -1,17 +1,17 @@
-;;; company-ml-sjs.el --- JavaScript tables for Company MarkLogic backend.
+;;; company-marklogic-sjs.el --- JavaScript tables for Company MarkLogic backend.
 
 ;;; Package info:
 ;;
-;; Homepage: https://github.com/fgeorges/company-ml
+;; Homepage: https://github.com/fgeorges/company-marklogic
 ;; Version: 1.0
 ;;
 ;;; Commentary:
 ;;
 ;; Tables for the Company backend for MarkLogic JavaScript functions.
 ;;
-;; See company-ml.el for copyright info.
+;; See company-marklogic.el for copyright info.
 
-(defconst company-ml-sjs-functions-admin
+(defconst company-marklogic-sjs-functions-admin
   '("appserverAddModuleLocation"
     "appserverAddNamespace"
     "appserverAddRequestBlackout"
@@ -969,7 +969,7 @@
     "webdavServerCreate"
     "xdbcServerCreate"))
 
-(defconst company-ml-sjs-functions-alert
+(defconst company-marklogic-sjs-functions-alert
   '("actionGetDescription"
     "actionGetModule"
     "actionGetModuleDb"
@@ -1034,13 +1034,13 @@
     "ruleUserIdQuery"
     "spawnMatchingActions"))
 
-(defconst company-ml-sjs-functions-cdict
+(defconst company-marklogic-sjs-functions-cdict
   '("dictionaryDelete"
     "dictionaryRead"
     "dictionaryWrite"
     "getLanguages"))
 
-(defconst company-ml-sjs-functions-clang
+(defconst company-marklogic-sjs-functions-clang
   '("deleteUserLanguage"
     "languageConfigDelete"
     "languageConfigRead"
@@ -1051,11 +1051,11 @@
     "userLanguage"
     "userLanguagePlugin"))
 
-(defconst company-ml-sjs-functions-cma
+(defconst company-marklogic-sjs-functions-cma
   '("applyConfig"
     "generateConfig"))
 
-(defconst company-ml-sjs-functions-cpf
+(defconst company-marklogic-sjs-functions-cpf
   '("checkTransition"
     "documentGetError"
     "documentGetLastUpdated"
@@ -1068,11 +1068,11 @@
     "failure"
     "success"))
 
-(defconst company-ml-sjs-functions-css
+(defconst company-marklogic-sjs-functions-css
   '("convert"
     "get"))
 
-(defconst company-ml-sjs-functions-cts
+(defconst company-marklogic-sjs-functions-cts
   '("afterQuery"
     "afterQueryTimestamp"
     "aggregate"
@@ -1470,14 +1470,14 @@
     "wordQueryWeight"
     "words"))
 
-(defconst company-ml-sjs-functions-cvt
+(defconst company-marklogic-sjs-functions-cvt
   '("basename"
     "basepath"
     "destinationUri"
     "partUri"
     "saveConvertedDocuments"))
 
-(defconst company-ml-sjs-functions-dbg
+(defconst company-marklogic-sjs-functions-dbg
   '("attach"
     "attached"
     "break"
@@ -1504,10 +1504,10 @@
     "value"
     "wait"))
 
-(defconst company-ml-sjs-functions-dbk
+(defconst company-marklogic-sjs-functions-dbk
   '("convert"))
 
-(defconst company-ml-sjs-functions-dls
+(defconst company-marklogic-sjs-functions-dls
   '("asOfQuery"
     "authorQuery"
     "breakCheckout"
@@ -1560,7 +1560,7 @@
     "updateValidationResults"
     "validateAllDocuments"))
 
-(defconst company-ml-sjs-functions-dom
+(defconst company-marklogic-sjs-functions-dom
   '("addPermissions"
     "addPipeline"
     "collection"
@@ -1585,7 +1585,7 @@
     "setPermissions"
     "setPipelines"))
 
-(defconst company-ml-sjs-functions-ec2
+(defconst company-marklogic-sjs-functions-ec2
   '("addSnapshotCreateVolumePermissionGroups"
     "addSnapshotCreateVolumePermissionUsers"
     "allocateAddress"
@@ -1651,14 +1651,14 @@
     "terminateInstances"
     "unmonitorInstances"))
 
-(defconst company-ml-sjs-functions-entity
+(defconst company-marklogic-sjs-functions-entity
   '("dictionaryInsert"
     "dictionaryLoad"
     "enrich"
     "extract"
     "skosDictionary"))
 
-(defconst company-ml-sjs-functions-es
+(defconst company-marklogic-sjs-functions-es
   '("addAttachments"
     "copyAttachments"
     "databasePropertiesGenerate"
@@ -1684,14 +1684,14 @@
     "versionTranslatorGenerate"
     "withNamespace"))
 
-(defconst company-ml-sjs-functions-excel
+(defconst company-marklogic-sjs-functions-excel
   '("clean"))
 
-(defconst company-ml-sjs-functions-exsl
+(defconst company-marklogic-sjs-functions-exsl
   '("nodeSet"
     "objectType"))
 
-(defconst company-ml-sjs-functions-flexrep
+(defconst company-marklogic-sjs-functions-flexrep
   '("_binaryPushStatusUri"
     "ackApply"
     "ackBinaryChunkApply"
@@ -1803,7 +1803,7 @@
     "validateName"
     "validateUrl"))
 
-(defconst company-ml-sjs-functions-fn
+(defconst company-marklogic-sjs-functions-fn
   '("QName"
     "abs"
     "adjustDateTimeToTimezone"
@@ -1952,7 +1952,7 @@
     "yearsFromDuration"
     "zeroOrOne"))
 
-(defconst company-ml-sjs-functions-geo
+(defconst company-marklogic-sjs-functions-geo
   '("approxCenter"
     "arcIntersection"
     "bearing"
@@ -2009,7 +2009,7 @@
     "validateWkb"
     "validateWkt"))
 
-(defconst company-ml-sjs-functions-geogml
+(defconst company-marklogic-sjs-functions-geogml
   '("box"
     "circle"
     "complexPolygon"
@@ -2022,7 +2022,7 @@
     "polygon"
     "toGml"))
 
-(defconst company-ml-sjs-functions-geojson
+(defconst company-marklogic-sjs-functions-geojson
   '("box"
     "circle"
     "complexPolygon"
@@ -2037,7 +2037,7 @@
     "polygon"
     "toGeojson"))
 
-(defconst company-ml-sjs-functions-geokml
+(defconst company-marklogic-sjs-functions-geokml
   '("box"
     "circle"
     "complexPolygon"
@@ -2050,7 +2050,7 @@
     "polygon"
     "toKml"))
 
-(defconst company-ml-sjs-functions-georss
+(defconst company-marklogic-sjs-functions-georss
   '("circle"
     "complexPolygon"
     "geospatialQuery"
@@ -2060,10 +2060,10 @@
     "polygon"
     "toGeorss"))
 
-(defconst company-ml-sjs-functions-hadoop
+(defconst company-marklogic-sjs-functions-hadoop
   '("getSplits"))
 
-(defconst company-ml-sjs-functions-info
+(defconst company-marklogic-sjs-functions-info
   '("databaseCreate"
     "databaseDelete"
     "databaseGetFeature"
@@ -2085,7 +2085,7 @@
     "tickets"
     "unload"))
 
-(defconst company-ml-sjs-functions-infodev
+(defconst company-marklogic-sjs-functions-infodev
   '("checkOptions"
     "collectorOptions"
     "effectivePolicy"
@@ -2105,7 +2105,7 @@
     "transaction"
     "transactionSize"))
 
-(defconst company-ml-sjs-functions-json
+(defconst company-marklogic-sjs-functions-json
   '("array"
     "arrayPop"
     "arrayPush"
@@ -2127,7 +2127,7 @@
     "transformToJsonObject"
     "transformToJsonXml"))
 
-(defconst company-ml-sjs-functions-lnk
+(defconst company-marklogic-sjs-functions-lnk
   '("create"
     "from"
     "get"
@@ -2135,7 +2135,7 @@
     "remove"
     "to"))
 
-(defconst company-ml-sjs-functions-map
+(defconst company-marklogic-sjs-functions-map
   '("clear"
     "contains"
     "count"
@@ -2149,7 +2149,7 @@
     "setJavascriptByRef"
     "with"))
 
-(defconst company-ml-sjs-functions-math
+(defconst company-marklogic-sjs-functions-math
   '("acos"
     "asin"
     "atan"
@@ -2194,23 +2194,23 @@
     "variance"
     "varianceP"))
 
-(defconst company-ml-sjs-functions-mcgm
+(defconst company-marklogic-sjs-functions-mcgm
   '("circle"
     "geospatialQuery"
     "geospatialQueryFromElements"
     "point"
     "polygon"))
 
-(defconst company-ml-sjs-functions-msword
+(defconst company-marklogic-sjs-functions-msword
   '("clean"))
 
-(defconst company-ml-sjs-functions-ooxml
+(defconst company-marklogic-sjs-functions-ooxml
   '("packageParts"
     "packagePartsInsert"
     "packageUris"
     "runsMerge"))
 
-(defconst company-ml-sjs-functions-op
+(defconst company-marklogic-sjs-functions-op
   '("add"
     "and"
     "arrayAggregate"
@@ -2298,7 +2298,7 @@
     "xmlText"
     "xpath"))
 
-(defconst company-ml-sjs-functions-p
+(defconst company-marklogic-sjs-functions-p
   '("action"
     "collection"
     "condition"
@@ -2312,13 +2312,13 @@
     "stateTransition"
     "statusTransition"))
 
-(defconst company-ml-sjs-functions-pdf
+(defconst company-marklogic-sjs-functions-pdf
   '("clean"
     "getToc"
     "insertTocHeaders"
     "makeToc"))
 
-(defconst company-ml-sjs-functions-pkg
+(defconst company-marklogic-sjs-functions-pkg
   '("create"
     "databaseConfiguration"
     "delete"
@@ -2344,7 +2344,7 @@
     "serverConfiguration"
     "valid"))
 
-(defconst company-ml-sjs-functions-pki
+(defconst company-marklogic-sjs-functions-pki
   '("authorityCreateClientCertificate"
     "authorityCreateHostCertificate"
     "authoritySignHostCertificateRequest"
@@ -2392,7 +2392,7 @@
     "templateSetName"
     "templateSetRequest"))
 
-(defconst company-ml-sjs-functions-plugin
+(defconst company-marklogic-sjs-functions-plugin
   '("asset"
     "assetExists"
     "capability"
@@ -2406,10 +2406,10 @@
     "register"
     "uninstall"))
 
-(defconst company-ml-sjs-functions-ppt
+(defconst company-marklogic-sjs-functions-ppt
   '("clean"))
 
-(defconst company-ml-sjs-functions-prof
+(defconst company-marklogic-sjs-functions-prof
   '("allowed"
     "disable"
     "enable"
@@ -2421,15 +2421,15 @@
     "xsltEval"
     "xsltInvoke"))
 
-(defconst company-ml-sjs-functions-rdf
+(defconst company-marklogic-sjs-functions-rdf
   '("langString"
     "langStringLanguage"))
 
-(defconst company-ml-sjs-functions-rdt
+(defconst company-marklogic-sjs-functions-rdt
   '("redact"
     "ruleValidate"))
 
-(defconst company-ml-sjs-functions-rest
+(defconst company-marklogic-sjs-functions-rest
   '("checkOptions"
     "checkRequest"
     "getRawQueryParams"
@@ -2438,7 +2438,7 @@
     "reportError"
     "rewrite"))
 
-(defconst company-ml-sjs-functions-sc
+(defconst company-marklogic-sjs-functions-sc
   '("annotations"
     "attributeDecl"
     "attributes"
@@ -2458,14 +2458,14 @@
     "typeApply"
     "typeNamed"))
 
-(defconst company-ml-sjs-functions-schematron
+(defconst company-marklogic-sjs-functions-schematron
   '("compile"
     "delete"
     "get"
     "put"
     "validate"))
 
-(defconst company-ml-sjs-functions-search
+(defconst company-marklogic-sjs-functions-search
   '("checkOptions"
     "estimate"
     "getDefaultOptions"
@@ -2479,7 +2479,7 @@
     "unparse"
     "values"))
 
-(defconst company-ml-sjs-functions-sec
+(defconst company-marklogic-sjs-functions-sec
   '("addQueryRolesets"
     "ampAddRoles"
     "ampDocCollections"
@@ -2680,7 +2680,7 @@
     "usersCollection"
     "validatePermissions"))
 
-(defconst company-ml-sjs-functions-sem
+(defconst company-marklogic-sjs-functions-sem
   '(""
     "binding"
     "bnode"
@@ -2739,7 +2739,7 @@
     "uuid"
     "uuidString"))
 
-(defconst company-ml-sjs-functions-spell
+(defconst company-marklogic-sjs-functions-spell
   '("addWord"
     "doubleMetaphone"
     "insert"
@@ -2752,7 +2752,7 @@
     "suggest"
     "suggestDetailed"))
 
-(defconst company-ml-sjs-functions-sql
+(defconst company-marklogic-sjs-functions-sql
   '("bitLength"
     "collatedString"
     "collatedStringCollation"
@@ -2793,13 +2793,13 @@
     "year"
     "yearday"))
 
-(defconst company-ml-sjs-functions-tde
+(defconst company-marklogic-sjs-functions-tde
   '("getView"
     "nodeDataExtract"
     "templateInsert"
     "validate"))
 
-(defconst company-ml-sjs-functions-temporal
+(defconst company-marklogic-sjs-functions-temporal
   '(""
     "advanceLsqt"
     "axes"
@@ -2835,7 +2835,7 @@
     "statementSetDocumentVersionUri"
     "statementSetSystemTime"))
 
-(defconst company-ml-sjs-functions-thsr
+(defconst company-marklogic-sjs-functions-thsr
   '("addSynonym"
     "expand"
     "insert"
@@ -2847,7 +2847,7 @@
     "removeTerm"
     "setEntry"))
 
-(defconst company-ml-sjs-functions-tieredstorage
+(defconst company-marklogic-sjs-functions-tieredstorage
   '("databaseCreateSubDatabase"
     "databaseCreateSuperDatabase"
     "databaseDeleteSubDatabase"
@@ -2873,7 +2873,7 @@
     "queryPartitionCreate"
     "rangePartitionCreate"))
 
-(defconst company-ml-sjs-functions-trgr
+(defconst company-marklogic-sjs-functions-trgr
   '("anyCustomPropertyContent"
     "anyPropertyContent"
     "collectionScope"
@@ -2915,7 +2915,7 @@
     "validateTriggerName"
     "validateWhen"))
 
-(defconst company-ml-sjs-functions-view
+(defconst company-marklogic-sjs-functions-view
   '("addColumn"
     "addField"
     "addPermissions"
@@ -2956,7 +2956,7 @@
     "setViewScope"
     "views"))
 
-(defconst company-ml-sjs-functions-xdmp
+(defconst company-marklogic-sjs-functions-xdmp
   '("QNameFromKey"
     "access"
     "add64"
@@ -3406,24 +3406,24 @@
     "zipGet"
     "zipManifest"))
 
-(defconst company-ml-sjs-functions-xhtml
+(defconst company-marklogic-sjs-functions-xhtml
   '("addLists"
     "clean"
     "restructure"))
 
-(defconst company-ml-sjs-functions-xinc
+(defconst company-marklogic-sjs-functions-xinc
   '("linkExpand"
     "linkReferences"
     "nodeExpand"))
 
-(defconst company-ml-sjs-functions-xp
+(defconst company-marklogic-sjs-functions-xp
   '("altPathFromElementScheme"
     "dereference"
     "doDereference"
     "parseXpointer"
     "pathFromElementScheme"))
 
-(defconst company-ml-sjs-functions-xs
+(defconst company-marklogic-sjs-functions-xs
   '("ENTITIES"
     "ENTITY"
     "ID"
@@ -3474,74 +3474,74 @@
     "unsignedShort"
     "yearMonthDuration"))
 
-(defconst company-ml-sjs-functions
+(defconst company-marklogic-sjs-functions
   (let ((addp (lambda (prefix names)
                 (mapcar (lambda (n) (concat prefix "." n)) names))))
-  `((admin . ,(funcall addp "admin" company-ml-sjs-functions-admin))
-    (alert . ,(funcall addp "alert" company-ml-sjs-functions-alert))
-    (cdict . ,(funcall addp "cdict" company-ml-sjs-functions-cdict))
-    (clang . ,(funcall addp "clang" company-ml-sjs-functions-clang))
-    (cma . ,(funcall addp "cma" company-ml-sjs-functions-cma))
-    (cpf . ,(funcall addp "cpf" company-ml-sjs-functions-cpf))
-    (css . ,(funcall addp "css" company-ml-sjs-functions-css))
-    (cts . ,(funcall addp "cts" company-ml-sjs-functions-cts))
-    (cvt . ,(funcall addp "cvt" company-ml-sjs-functions-cvt))
-    (dbg . ,(funcall addp "dbg" company-ml-sjs-functions-dbg))
-    (dbk . ,(funcall addp "dbk" company-ml-sjs-functions-dbk))
-    (dls . ,(funcall addp "dls" company-ml-sjs-functions-dls))
-    (dom . ,(funcall addp "dom" company-ml-sjs-functions-dom))
-    (ec2 . ,(funcall addp "ec2" company-ml-sjs-functions-ec2))
-    (entity . ,(funcall addp "entity" company-ml-sjs-functions-entity))
-    (es . ,(funcall addp "es" company-ml-sjs-functions-es))
-    (excel . ,(funcall addp "excel" company-ml-sjs-functions-excel))
-    (exsl . ,(funcall addp "exsl" company-ml-sjs-functions-exsl))
-    (flexrep . ,(funcall addp "flexrep" company-ml-sjs-functions-flexrep))
-    (fn . ,(funcall addp "fn" company-ml-sjs-functions-fn))
-    (geo . ,(funcall addp "geo" company-ml-sjs-functions-geo))
-    (geogml . ,(funcall addp "geogml" company-ml-sjs-functions-geogml))
-    (geojson . ,(funcall addp "geojson" company-ml-sjs-functions-geojson))
-    (geokml . ,(funcall addp "geokml" company-ml-sjs-functions-geokml))
-    (georss . ,(funcall addp "georss" company-ml-sjs-functions-georss))
-    (hadoop . ,(funcall addp "hadoop" company-ml-sjs-functions-hadoop))
-    (info . ,(funcall addp "info" company-ml-sjs-functions-info))
-    (infodev . ,(funcall addp "infodev" company-ml-sjs-functions-infodev))
-    (json . ,(funcall addp "json" company-ml-sjs-functions-json))
-    (lnk . ,(funcall addp "lnk" company-ml-sjs-functions-lnk))
-    (map . ,(funcall addp "map" company-ml-sjs-functions-map))
-    (math . ,(funcall addp "math" company-ml-sjs-functions-math))
-    (mcgm . ,(funcall addp "mcgm" company-ml-sjs-functions-mcgm))
-    (msword . ,(funcall addp "msword" company-ml-sjs-functions-msword))
-    (ooxml . ,(funcall addp "ooxml" company-ml-sjs-functions-ooxml))
-    (op . ,(funcall addp "op" company-ml-sjs-functions-op))
-    (p . ,(funcall addp "p" company-ml-sjs-functions-p))
-    (pdf . ,(funcall addp "pdf" company-ml-sjs-functions-pdf))
-    (pkg . ,(funcall addp "pkg" company-ml-sjs-functions-pkg))
-    (pki . ,(funcall addp "pki" company-ml-sjs-functions-pki))
-    (plugin . ,(funcall addp "plugin" company-ml-sjs-functions-plugin))
-    (ppt . ,(funcall addp "ppt" company-ml-sjs-functions-ppt))
-    (prof . ,(funcall addp "prof" company-ml-sjs-functions-prof))
-    (rdf . ,(funcall addp "rdf" company-ml-sjs-functions-rdf))
-    (rdt . ,(funcall addp "rdt" company-ml-sjs-functions-rdt))
-    (rest . ,(funcall addp "rest" company-ml-sjs-functions-rest))
-    (sc . ,(funcall addp "sc" company-ml-sjs-functions-sc))
-    (schematron . ,(funcall addp "schematron" company-ml-sjs-functions-schematron))
-    (search . ,(funcall addp "search" company-ml-sjs-functions-search))
-    (sec . ,(funcall addp "sec" company-ml-sjs-functions-sec))
-    (sem . ,(funcall addp "sem" company-ml-sjs-functions-sem))
-    (spell . ,(funcall addp "spell" company-ml-sjs-functions-spell))
-    (sql . ,(funcall addp "sql" company-ml-sjs-functions-sql))
-    (tde . ,(funcall addp "tde" company-ml-sjs-functions-tde))
-    (temporal . ,(funcall addp "temporal" company-ml-sjs-functions-temporal))
-    (thsr . ,(funcall addp "thsr" company-ml-sjs-functions-thsr))
-    (tieredstorage . ,(funcall addp "tieredstorage" company-ml-sjs-functions-tieredstorage))
-    (trgr . ,(funcall addp "trgr" company-ml-sjs-functions-trgr))
-    (view . ,(funcall addp "view" company-ml-sjs-functions-view))
-    (xdmp . ,(funcall addp "xdmp" company-ml-sjs-functions-xdmp))
-    (xhtml . ,(funcall addp "xhtml" company-ml-sjs-functions-xhtml))
-    (xinc . ,(funcall addp "xinc" company-ml-sjs-functions-xinc))
-    (xp . ,(funcall addp "xp" company-ml-sjs-functions-xp))
-    (xs . ,(funcall addp "xs" company-ml-sjs-functions-xs)))))
+  `((admin . ,(funcall addp "admin" company-marklogic-sjs-functions-admin))
+    (alert . ,(funcall addp "alert" company-marklogic-sjs-functions-alert))
+    (cdict . ,(funcall addp "cdict" company-marklogic-sjs-functions-cdict))
+    (clang . ,(funcall addp "clang" company-marklogic-sjs-functions-clang))
+    (cma . ,(funcall addp "cma" company-marklogic-sjs-functions-cma))
+    (cpf . ,(funcall addp "cpf" company-marklogic-sjs-functions-cpf))
+    (css . ,(funcall addp "css" company-marklogic-sjs-functions-css))
+    (cts . ,(funcall addp "cts" company-marklogic-sjs-functions-cts))
+    (cvt . ,(funcall addp "cvt" company-marklogic-sjs-functions-cvt))
+    (dbg . ,(funcall addp "dbg" company-marklogic-sjs-functions-dbg))
+    (dbk . ,(funcall addp "dbk" company-marklogic-sjs-functions-dbk))
+    (dls . ,(funcall addp "dls" company-marklogic-sjs-functions-dls))
+    (dom . ,(funcall addp "dom" company-marklogic-sjs-functions-dom))
+    (ec2 . ,(funcall addp "ec2" company-marklogic-sjs-functions-ec2))
+    (entity . ,(funcall addp "entity" company-marklogic-sjs-functions-entity))
+    (es . ,(funcall addp "es" company-marklogic-sjs-functions-es))
+    (excel . ,(funcall addp "excel" company-marklogic-sjs-functions-excel))
+    (exsl . ,(funcall addp "exsl" company-marklogic-sjs-functions-exsl))
+    (flexrep . ,(funcall addp "flexrep" company-marklogic-sjs-functions-flexrep))
+    (fn . ,(funcall addp "fn" company-marklogic-sjs-functions-fn))
+    (geo . ,(funcall addp "geo" company-marklogic-sjs-functions-geo))
+    (geogml . ,(funcall addp "geogml" company-marklogic-sjs-functions-geogml))
+    (geojson . ,(funcall addp "geojson" company-marklogic-sjs-functions-geojson))
+    (geokml . ,(funcall addp "geokml" company-marklogic-sjs-functions-geokml))
+    (georss . ,(funcall addp "georss" company-marklogic-sjs-functions-georss))
+    (hadoop . ,(funcall addp "hadoop" company-marklogic-sjs-functions-hadoop))
+    (info . ,(funcall addp "info" company-marklogic-sjs-functions-info))
+    (infodev . ,(funcall addp "infodev" company-marklogic-sjs-functions-infodev))
+    (json . ,(funcall addp "json" company-marklogic-sjs-functions-json))
+    (lnk . ,(funcall addp "lnk" company-marklogic-sjs-functions-lnk))
+    (map . ,(funcall addp "map" company-marklogic-sjs-functions-map))
+    (math . ,(funcall addp "math" company-marklogic-sjs-functions-math))
+    (mcgm . ,(funcall addp "mcgm" company-marklogic-sjs-functions-mcgm))
+    (msword . ,(funcall addp "msword" company-marklogic-sjs-functions-msword))
+    (ooxml . ,(funcall addp "ooxml" company-marklogic-sjs-functions-ooxml))
+    (op . ,(funcall addp "op" company-marklogic-sjs-functions-op))
+    (p . ,(funcall addp "p" company-marklogic-sjs-functions-p))
+    (pdf . ,(funcall addp "pdf" company-marklogic-sjs-functions-pdf))
+    (pkg . ,(funcall addp "pkg" company-marklogic-sjs-functions-pkg))
+    (pki . ,(funcall addp "pki" company-marklogic-sjs-functions-pki))
+    (plugin . ,(funcall addp "plugin" company-marklogic-sjs-functions-plugin))
+    (ppt . ,(funcall addp "ppt" company-marklogic-sjs-functions-ppt))
+    (prof . ,(funcall addp "prof" company-marklogic-sjs-functions-prof))
+    (rdf . ,(funcall addp "rdf" company-marklogic-sjs-functions-rdf))
+    (rdt . ,(funcall addp "rdt" company-marklogic-sjs-functions-rdt))
+    (rest . ,(funcall addp "rest" company-marklogic-sjs-functions-rest))
+    (sc . ,(funcall addp "sc" company-marklogic-sjs-functions-sc))
+    (schematron . ,(funcall addp "schematron" company-marklogic-sjs-functions-schematron))
+    (search . ,(funcall addp "search" company-marklogic-sjs-functions-search))
+    (sec . ,(funcall addp "sec" company-marklogic-sjs-functions-sec))
+    (sem . ,(funcall addp "sem" company-marklogic-sjs-functions-sem))
+    (spell . ,(funcall addp "spell" company-marklogic-sjs-functions-spell))
+    (sql . ,(funcall addp "sql" company-marklogic-sjs-functions-sql))
+    (tde . ,(funcall addp "tde" company-marklogic-sjs-functions-tde))
+    (temporal . ,(funcall addp "temporal" company-marklogic-sjs-functions-temporal))
+    (thsr . ,(funcall addp "thsr" company-marklogic-sjs-functions-thsr))
+    (tieredstorage . ,(funcall addp "tieredstorage" company-marklogic-sjs-functions-tieredstorage))
+    (trgr . ,(funcall addp "trgr" company-marklogic-sjs-functions-trgr))
+    (view . ,(funcall addp "view" company-marklogic-sjs-functions-view))
+    (xdmp . ,(funcall addp "xdmp" company-marklogic-sjs-functions-xdmp))
+    (xhtml . ,(funcall addp "xhtml" company-marklogic-sjs-functions-xhtml))
+    (xinc . ,(funcall addp "xinc" company-marklogic-sjs-functions-xinc))
+    (xp . ,(funcall addp "xp" company-marklogic-sjs-functions-xp))
+    (xs . ,(funcall addp "xs" company-marklogic-sjs-functions-xs)))))
 
-(provide 'company-ml-sjs)
+(provide 'company-marklogic-sjs)
 
-;;; company-ml-sjs.el ends here
+;;; company-marklogic-sjs.el ends here

@@ -1,17 +1,17 @@
-;;; company-ml-xqy.el --- XQuery tables for Company MarkLogic backend.
+;;; company-marklogic-xqy.el --- XQuery tables for Company MarkLogic backend.
 
 ;;; Package info:
 ;;
-;; Homepage: https://github.com/fgeorges/company-ml
+;; Homepage: https://github.com/fgeorges/company-marklogic
 ;; Version: 1.0
 ;;
 ;;; Commentary:
 ;;
 ;; Tables for the Company backend for MarkLogic XQuery functions.
 ;;
-;; See company-ml.el for copyright and all info.
+;; See company-marklogic.el for copyright and all info.
 
-(defconst company-ml-xqy-functions-admin
+(defconst company-marklogic-xqy-functions-admin
   '("appserver-add-module-location"
     "appserver-add-namespace"
     "appserver-add-request-blackout"
@@ -969,7 +969,7 @@
     "webdav-server-create"
     "xdbc-server-create"))
 
-(defconst company-ml-xqy-functions-alert
+(defconst company-marklogic-xqy-functions-alert
   '("action-get-description"
     "action-get-module"
     "action-get-module-db"
@@ -1034,13 +1034,13 @@
     "rule-user-id-query"
     "spawn-matching-actions"))
 
-(defconst company-ml-xqy-functions-cdict
+(defconst company-marklogic-xqy-functions-cdict
   '("dictionary-delete"
     "dictionary-read"
     "dictionary-write"
     "get-languages"))
 
-(defconst company-ml-xqy-functions-clang
+(defconst company-marklogic-xqy-functions-clang
   '("delete-user-language"
     "language-config-delete"
     "language-config-read"
@@ -1051,11 +1051,11 @@
     "user-language"
     "user-language-plugin"))
 
-(defconst company-ml-xqy-functions-cma
+(defconst company-marklogic-xqy-functions-cma
   '("apply-config"
     "generate-config"))
 
-(defconst company-ml-xqy-functions-cpf
+(defconst company-marklogic-xqy-functions-cpf
   '("check-transition"
     "document-get-error"
     "document-get-last-updated"
@@ -1068,11 +1068,11 @@
     "failure"
     "success"))
 
-(defconst company-ml-xqy-functions-css
+(defconst company-marklogic-xqy-functions-css
   '("convert"
     "get"))
 
-(defconst company-ml-xqy-functions-cts
+(defconst company-marklogic-xqy-functions-cts
   '("after-query"
     "after-query-timestamp"
     "aggregate"
@@ -1470,14 +1470,14 @@
     "word-query-weight"
     "words"))
 
-(defconst company-ml-xqy-functions-cvt
+(defconst company-marklogic-xqy-functions-cvt
   '("basename"
     "basepath"
     "destination-uri"
     "part-uri"
     "save-converted-documents"))
 
-(defconst company-ml-xqy-functions-dbg
+(defconst company-marklogic-xqy-functions-dbg
   '("attach"
     "attached"
     "break"
@@ -1504,10 +1504,10 @@
     "value"
     "wait"))
 
-(defconst company-ml-xqy-functions-dbk
+(defconst company-marklogic-xqy-functions-dbk
   '("convert"))
 
-(defconst company-ml-xqy-functions-dls
+(defconst company-marklogic-xqy-functions-dls
   '("as-of-query"
     "author-query"
     "break-checkout"
@@ -1560,7 +1560,7 @@
     "update-validation-results"
     "validate-all-documents"))
 
-(defconst company-ml-xqy-functions-dom
+(defconst company-marklogic-xqy-functions-dom
   '("add-permissions"
     "add-pipeline"
     "collection"
@@ -1585,7 +1585,7 @@
     "set-permissions"
     "set-pipelines"))
 
-(defconst company-ml-xqy-functions-ec2
+(defconst company-marklogic-xqy-functions-ec2
   '("add-snapshot-create-volume-permission-groups"
     "add-snapshot-create-volume-permission-users"
     "allocate-address"
@@ -1651,14 +1651,14 @@
     "terminate-instances"
     "unmonitor-instances"))
 
-(defconst company-ml-xqy-functions-entity
+(defconst company-marklogic-xqy-functions-entity
   '("dictionary-insert"
     "dictionary-load"
     "enrich"
     "extract"
     "skos-dictionary"))
 
-(defconst company-ml-xqy-functions-es
+(defconst company-marklogic-xqy-functions-es
   '("add-attachments"
     "copy-attachments"
     "database-properties-generate"
@@ -1684,14 +1684,14 @@
     "version-translator-generate"
     "with-namespace"))
 
-(defconst company-ml-xqy-functions-excel
+(defconst company-marklogic-xqy-functions-excel
   '("clean"))
 
-(defconst company-ml-xqy-functions-exsl
+(defconst company-marklogic-xqy-functions-exsl
   '("node-set"
     "object-type"))
 
-(defconst company-ml-xqy-functions-flexrep
+(defconst company-marklogic-xqy-functions-flexrep
   '("_binary-push-status-uri"
     "ack-apply"
     "ack-binary-chunk-apply"
@@ -1803,7 +1803,7 @@
     "validate-name"
     "validate-url"))
 
-(defconst company-ml-xqy-functions-fn
+(defconst company-marklogic-xqy-functions-fn
   '("QName"
     "abs"
     "adjust-date-to-timezone"
@@ -1952,7 +1952,7 @@
     "years-from-duration"
     "zero-or-one"))
 
-(defconst company-ml-xqy-functions-geo
+(defconst company-marklogic-xqy-functions-geo
   '("approx-center"
     "arc-intersection"
     "bearing"
@@ -2009,7 +2009,7 @@
     "validate-wkb"
     "validate-wkt"))
 
-(defconst company-ml-xqy-functions-geogml
+(defconst company-marklogic-xqy-functions-geogml
   '("box"
     "circle"
     "complex-polygon"
@@ -2022,7 +2022,7 @@
     "polygon"
     "to-gml"))
 
-(defconst company-ml-xqy-functions-geojson
+(defconst company-marklogic-xqy-functions-geojson
   '("box"
     "circle"
     "complex-polygon"
@@ -2037,7 +2037,7 @@
     "polygon"
     "to-geojson"))
 
-(defconst company-ml-xqy-functions-geokml
+(defconst company-marklogic-xqy-functions-geokml
   '("box"
     "circle"
     "complex-polygon"
@@ -2050,7 +2050,7 @@
     "polygon"
     "to-kml"))
 
-(defconst company-ml-xqy-functions-georss
+(defconst company-marklogic-xqy-functions-georss
   '("circle"
     "complex-polygon"
     "geospatial-query"
@@ -2060,10 +2060,10 @@
     "polygon"
     "to-georss"))
 
-(defconst company-ml-xqy-functions-hadoop
+(defconst company-marklogic-xqy-functions-hadoop
   '("get-splits"))
 
-(defconst company-ml-xqy-functions-info
+(defconst company-marklogic-xqy-functions-info
   '("database-create"
     "database-delete"
     "database-get-feature"
@@ -2085,7 +2085,7 @@
     "tickets"
     "unload"))
 
-(defconst company-ml-xqy-functions-infodev
+(defconst company-marklogic-xqy-functions-infodev
   '("check-options"
     "collector-options"
     "effective-policy"
@@ -2105,7 +2105,7 @@
     "transaction"
     "transaction-size"))
 
-(defconst company-ml-xqy-functions-json
+(defconst company-marklogic-xqy-functions-json
   '("array"
     "array-pop"
     "array-push"
@@ -2127,7 +2127,7 @@
     "transform-to-json-object"
     "transform-to-json-xml"))
 
-(defconst company-ml-xqy-functions-lnk
+(defconst company-marklogic-xqy-functions-lnk
   '("create"
     "from"
     "get"
@@ -2135,7 +2135,7 @@
     "remove"
     "to"))
 
-(defconst company-ml-xqy-functions-map
+(defconst company-marklogic-xqy-functions-map
   '("clear"
     "contains"
     "count"
@@ -2149,7 +2149,7 @@
     "set-javascript-by-ref"
     "with"))
 
-(defconst company-ml-xqy-functions-math
+(defconst company-marklogic-xqy-functions-math
   '("acos"
     "asin"
     "atan"
@@ -2194,23 +2194,23 @@
     "variance"
     "variance-p"))
 
-(defconst company-ml-xqy-functions-mcgm
+(defconst company-marklogic-xqy-functions-mcgm
   '("circle"
     "geospatial-query"
     "geospatial-query-from-elements"
     "point"
     "polygon"))
 
-(defconst company-ml-xqy-functions-msword
+(defconst company-marklogic-xqy-functions-msword
   '("clean"))
 
-(defconst company-ml-xqy-functions-ooxml
+(defconst company-marklogic-xqy-functions-ooxml
   '("package-parts"
     "package-parts-insert"
     "package-uris"
     "runs-merge"))
 
-(defconst company-ml-xqy-functions-op
+(defconst company-marklogic-xqy-functions-op
   '("add"
     "and"
     "array-aggregate"
@@ -2298,7 +2298,7 @@
     "xml-text"
     "xpath"))
 
-(defconst company-ml-xqy-functions-p
+(defconst company-marklogic-xqy-functions-p
   '("action"
     "collection"
     "condition"
@@ -2312,13 +2312,13 @@
     "state-transition"
     "status-transition"))
 
-(defconst company-ml-xqy-functions-pdf
+(defconst company-marklogic-xqy-functions-pdf
   '("clean"
     "get-toc"
     "insert-toc-headers"
     "make-toc"))
 
-(defconst company-ml-xqy-functions-pkg
+(defconst company-marklogic-xqy-functions-pkg
   '("create"
     "database-configuration"
     "delete"
@@ -2344,7 +2344,7 @@
     "server-configuration"
     "valid"))
 
-(defconst company-ml-xqy-functions-pki
+(defconst company-marklogic-xqy-functions-pki
   '("authority-create-client-certificate"
     "authority-create-host-certificate"
     "authority-sign-host-certificate-request"
@@ -2392,7 +2392,7 @@
     "template-set-name"
     "template-set-request"))
 
-(defconst company-ml-xqy-functions-plugin
+(defconst company-marklogic-xqy-functions-plugin
   '("asset"
     "asset-exists"
     "capability"
@@ -2406,10 +2406,10 @@
     "register"
     "uninstall"))
 
-(defconst company-ml-xqy-functions-ppt
+(defconst company-marklogic-xqy-functions-ppt
   '("clean"))
 
-(defconst company-ml-xqy-functions-prof
+(defconst company-marklogic-xqy-functions-prof
   '("allowed"
     "disable"
     "enable"
@@ -2421,15 +2421,15 @@
     "xslt-eval"
     "xslt-invoke"))
 
-(defconst company-ml-xqy-functions-rdf
+(defconst company-marklogic-xqy-functions-rdf
   '("langString"
     "langString-language"))
 
-(defconst company-ml-xqy-functions-rdt
+(defconst company-marklogic-xqy-functions-rdt
   '("redact"
     "rule-validate"))
 
-(defconst company-ml-xqy-functions-rest
+(defconst company-marklogic-xqy-functions-rest
   '("check-options"
     "check-request"
     "get-raw-query-params"
@@ -2438,7 +2438,7 @@
     "report-error"
     "rewrite"))
 
-(defconst company-ml-xqy-functions-sc
+(defconst company-marklogic-xqy-functions-sc
   '("annotations"
     "attribute-decl"
     "attributes"
@@ -2458,14 +2458,14 @@
     "type-apply"
     "type-named"))
 
-(defconst company-ml-xqy-functions-schematron
+(defconst company-marklogic-xqy-functions-schematron
   '("compile"
     "delete"
     "get"
     "put"
     "validate"))
 
-(defconst company-ml-xqy-functions-search
+(defconst company-marklogic-xqy-functions-search
   '("check-options"
     "estimate"
     "get-default-options"
@@ -2479,7 +2479,7 @@
     "unparse"
     "values"))
 
-(defconst company-ml-xqy-functions-sec
+(defconst company-marklogic-xqy-functions-sec
   '("add-query-rolesets"
     "amp-add-roles"
     "amp-doc-collections"
@@ -2680,7 +2680,7 @@
     "users-collection"
     "validate-permissions"))
 
-(defconst company-ml-xqy-functions-sem
+(defconst company-marklogic-xqy-functions-sem
   '(""
     "binding"
     "bnode"
@@ -2739,7 +2739,7 @@
     "uuid"
     "uuid-string"))
 
-(defconst company-ml-xqy-functions-spell
+(defconst company-marklogic-xqy-functions-spell
   '("add-word"
     "double-metaphone"
     "insert"
@@ -2752,7 +2752,7 @@
     "suggest"
     "suggest-detailed"))
 
-(defconst company-ml-xqy-functions-sql
+(defconst company-marklogic-xqy-functions-sql
   '("bit-length"
     "collated-string"
     "collatedString-collation"
@@ -2793,13 +2793,13 @@
     "year"
     "yearday"))
 
-(defconst company-ml-xqy-functions-tde
+(defconst company-marklogic-xqy-functions-tde
   '("get-view"
     "node-data-extract"
     "template-insert"
     "validate"))
 
-(defconst company-ml-xqy-functions-temporal
+(defconst company-marklogic-xqy-functions-temporal
   '(""
     "advance-lsqt"
     "axes"
@@ -2835,7 +2835,7 @@
     "statement-set-document-version-uri"
     "statement-set-system-time"))
 
-(defconst company-ml-xqy-functions-thsr
+(defconst company-marklogic-xqy-functions-thsr
   '("add-synonym"
     "expand"
     "insert"
@@ -2847,7 +2847,7 @@
     "remove-term"
     "set-entry"))
 
-(defconst company-ml-xqy-functions-tieredstorage
+(defconst company-marklogic-xqy-functions-tieredstorage
   '("database-create-sub-database"
     "database-create-super-database"
     "database-delete-sub-database"
@@ -2873,7 +2873,7 @@
     "query-partition-create"
     "range-partition-create"))
 
-(defconst company-ml-xqy-functions-trgr
+(defconst company-marklogic-xqy-functions-trgr
   '("any-custom-property-content"
     "any-property-content"
     "collection-scope"
@@ -2915,7 +2915,7 @@
     "validate-trigger-name"
     "validate-when"))
 
-(defconst company-ml-xqy-functions-view
+(defconst company-marklogic-xqy-functions-view
   '("add-column"
     "add-field"
     "add-permissions"
@@ -2956,7 +2956,7 @@
     "set-view-scope"
     "views"))
 
-(defconst company-ml-xqy-functions-xdmp
+(defconst company-marklogic-xqy-functions-xdmp
   '("QName-from-key"
     "access"
     "add-response-header"
@@ -3406,24 +3406,24 @@
     "zip-get"
     "zip-manifest"))
 
-(defconst company-ml-xqy-functions-xhtml
+(defconst company-marklogic-xqy-functions-xhtml
   '("add-lists"
     "clean"
     "restructure"))
 
-(defconst company-ml-xqy-functions-xinc
+(defconst company-marklogic-xqy-functions-xinc
   '("link-expand"
     "link-references"
     "node-expand"))
 
-(defconst company-ml-xqy-functions-xp
+(defconst company-marklogic-xqy-functions-xp
   '("alt-path-from-element-scheme"
     "dereference"
     "do-dereference"
     "parse-xpointer"
     "path-from-element-scheme"))
 
-(defconst company-ml-xqy-functions-xs
+(defconst company-marklogic-xqy-functions-xs
   '("ENTITIES"
     "ENTITY"
     "ID"
@@ -3474,74 +3474,74 @@
     "unsignedShort"
     "yearMonthDuration"))
 
-(defconst company-ml-xqy-functions
+(defconst company-marklogic-xqy-functions
   (let ((addp (lambda (prefix names)
                 (mapcar (lambda (n) (concat prefix ":" n)) names))))
-  `((admin . ,(funcall addp "admin" company-ml-xqy-functions-admin))
-    (alert . ,(funcall addp "alert" company-ml-xqy-functions-alert))
-    (cdict . ,(funcall addp "cdict" company-ml-xqy-functions-cdict))
-    (clang . ,(funcall addp "clang" company-ml-xqy-functions-clang))
-    (cma . ,(funcall addp "cma" company-ml-xqy-functions-cma))
-    (cpf . ,(funcall addp "cpf" company-ml-xqy-functions-cpf))
-    (css . ,(funcall addp "css" company-ml-xqy-functions-css))
-    (cts . ,(funcall addp "cts" company-ml-xqy-functions-cts))
-    (cvt . ,(funcall addp "cvt" company-ml-xqy-functions-cvt))
-    (dbg . ,(funcall addp "dbg" company-ml-xqy-functions-dbg))
-    (dbk . ,(funcall addp "dbk" company-ml-xqy-functions-dbk))
-    (dls . ,(funcall addp "dls" company-ml-xqy-functions-dls))
-    (dom . ,(funcall addp "dom" company-ml-xqy-functions-dom))
-    (ec2 . ,(funcall addp "ec2" company-ml-xqy-functions-ec2))
-    (entity . ,(funcall addp "entity" company-ml-xqy-functions-entity))
-    (es . ,(funcall addp "es" company-ml-xqy-functions-es))
-    (excel . ,(funcall addp "excel" company-ml-xqy-functions-excel))
-    (exsl . ,(funcall addp "exsl" company-ml-xqy-functions-exsl))
-    (flexrep . ,(funcall addp "flexrep" company-ml-xqy-functions-flexrep))
-    (fn . ,(funcall addp "fn" company-ml-xqy-functions-fn))
-    (geo . ,(funcall addp "geo" company-ml-xqy-functions-geo))
-    (geogml . ,(funcall addp "geogml" company-ml-xqy-functions-geogml))
-    (geojson . ,(funcall addp "geojson" company-ml-xqy-functions-geojson))
-    (geokml . ,(funcall addp "geokml" company-ml-xqy-functions-geokml))
-    (georss . ,(funcall addp "georss" company-ml-xqy-functions-georss))
-    (hadoop . ,(funcall addp "hadoop" company-ml-xqy-functions-hadoop))
-    (info . ,(funcall addp "info" company-ml-xqy-functions-info))
-    (infodev . ,(funcall addp "infodev" company-ml-xqy-functions-infodev))
-    (json . ,(funcall addp "json" company-ml-xqy-functions-json))
-    (lnk . ,(funcall addp "lnk" company-ml-xqy-functions-lnk))
-    (map . ,(funcall addp "map" company-ml-xqy-functions-map))
-    (math . ,(funcall addp "math" company-ml-xqy-functions-math))
-    (mcgm . ,(funcall addp "mcgm" company-ml-xqy-functions-mcgm))
-    (msword . ,(funcall addp "msword" company-ml-xqy-functions-msword))
-    (ooxml . ,(funcall addp "ooxml" company-ml-xqy-functions-ooxml))
-    (op . ,(funcall addp "op" company-ml-xqy-functions-op))
-    (p . ,(funcall addp "p" company-ml-xqy-functions-p))
-    (pdf . ,(funcall addp "pdf" company-ml-xqy-functions-pdf))
-    (pkg . ,(funcall addp "pkg" company-ml-xqy-functions-pkg))
-    (pki . ,(funcall addp "pki" company-ml-xqy-functions-pki))
-    (plugin . ,(funcall addp "plugin" company-ml-xqy-functions-plugin))
-    (ppt . ,(funcall addp "ppt" company-ml-xqy-functions-ppt))
-    (prof . ,(funcall addp "prof" company-ml-xqy-functions-prof))
-    (rdf . ,(funcall addp "rdf" company-ml-xqy-functions-rdf))
-    (rdt . ,(funcall addp "rdt" company-ml-xqy-functions-rdt))
-    (rest . ,(funcall addp "rest" company-ml-xqy-functions-rest))
-    (sc . ,(funcall addp "sc" company-ml-xqy-functions-sc))
-    (schematron . ,(funcall addp "schematron" company-ml-xqy-functions-schematron))
-    (search . ,(funcall addp "search" company-ml-xqy-functions-search))
-    (sec . ,(funcall addp "sec" company-ml-xqy-functions-sec))
-    (sem . ,(funcall addp "sem" company-ml-xqy-functions-sem))
-    (spell . ,(funcall addp "spell" company-ml-xqy-functions-spell))
-    (sql . ,(funcall addp "sql" company-ml-xqy-functions-sql))
-    (tde . ,(funcall addp "tde" company-ml-xqy-functions-tde))
-    (temporal . ,(funcall addp "temporal" company-ml-xqy-functions-temporal))
-    (thsr . ,(funcall addp "thsr" company-ml-xqy-functions-thsr))
-    (tieredstorage . ,(funcall addp "tieredstorage" company-ml-xqy-functions-tieredstorage))
-    (trgr . ,(funcall addp "trgr" company-ml-xqy-functions-trgr))
-    (view . ,(funcall addp "view" company-ml-xqy-functions-view))
-    (xdmp . ,(funcall addp "xdmp" company-ml-xqy-functions-xdmp))
-    (xhtml . ,(funcall addp "xhtml" company-ml-xqy-functions-xhtml))
-    (xinc . ,(funcall addp "xinc" company-ml-xqy-functions-xinc))
-    (xp . ,(funcall addp "xp" company-ml-xqy-functions-xp))
-    (xs . ,(funcall addp "xs" company-ml-xqy-functions-xs)))))
+  `((admin . ,(funcall addp "admin" company-marklogic-xqy-functions-admin))
+    (alert . ,(funcall addp "alert" company-marklogic-xqy-functions-alert))
+    (cdict . ,(funcall addp "cdict" company-marklogic-xqy-functions-cdict))
+    (clang . ,(funcall addp "clang" company-marklogic-xqy-functions-clang))
+    (cma . ,(funcall addp "cma" company-marklogic-xqy-functions-cma))
+    (cpf . ,(funcall addp "cpf" company-marklogic-xqy-functions-cpf))
+    (css . ,(funcall addp "css" company-marklogic-xqy-functions-css))
+    (cts . ,(funcall addp "cts" company-marklogic-xqy-functions-cts))
+    (cvt . ,(funcall addp "cvt" company-marklogic-xqy-functions-cvt))
+    (dbg . ,(funcall addp "dbg" company-marklogic-xqy-functions-dbg))
+    (dbk . ,(funcall addp "dbk" company-marklogic-xqy-functions-dbk))
+    (dls . ,(funcall addp "dls" company-marklogic-xqy-functions-dls))
+    (dom . ,(funcall addp "dom" company-marklogic-xqy-functions-dom))
+    (ec2 . ,(funcall addp "ec2" company-marklogic-xqy-functions-ec2))
+    (entity . ,(funcall addp "entity" company-marklogic-xqy-functions-entity))
+    (es . ,(funcall addp "es" company-marklogic-xqy-functions-es))
+    (excel . ,(funcall addp "excel" company-marklogic-xqy-functions-excel))
+    (exsl . ,(funcall addp "exsl" company-marklogic-xqy-functions-exsl))
+    (flexrep . ,(funcall addp "flexrep" company-marklogic-xqy-functions-flexrep))
+    (fn . ,(funcall addp "fn" company-marklogic-xqy-functions-fn))
+    (geo . ,(funcall addp "geo" company-marklogic-xqy-functions-geo))
+    (geogml . ,(funcall addp "geogml" company-marklogic-xqy-functions-geogml))
+    (geojson . ,(funcall addp "geojson" company-marklogic-xqy-functions-geojson))
+    (geokml . ,(funcall addp "geokml" company-marklogic-xqy-functions-geokml))
+    (georss . ,(funcall addp "georss" company-marklogic-xqy-functions-georss))
+    (hadoop . ,(funcall addp "hadoop" company-marklogic-xqy-functions-hadoop))
+    (info . ,(funcall addp "info" company-marklogic-xqy-functions-info))
+    (infodev . ,(funcall addp "infodev" company-marklogic-xqy-functions-infodev))
+    (json . ,(funcall addp "json" company-marklogic-xqy-functions-json))
+    (lnk . ,(funcall addp "lnk" company-marklogic-xqy-functions-lnk))
+    (map . ,(funcall addp "map" company-marklogic-xqy-functions-map))
+    (math . ,(funcall addp "math" company-marklogic-xqy-functions-math))
+    (mcgm . ,(funcall addp "mcgm" company-marklogic-xqy-functions-mcgm))
+    (msword . ,(funcall addp "msword" company-marklogic-xqy-functions-msword))
+    (ooxml . ,(funcall addp "ooxml" company-marklogic-xqy-functions-ooxml))
+    (op . ,(funcall addp "op" company-marklogic-xqy-functions-op))
+    (p . ,(funcall addp "p" company-marklogic-xqy-functions-p))
+    (pdf . ,(funcall addp "pdf" company-marklogic-xqy-functions-pdf))
+    (pkg . ,(funcall addp "pkg" company-marklogic-xqy-functions-pkg))
+    (pki . ,(funcall addp "pki" company-marklogic-xqy-functions-pki))
+    (plugin . ,(funcall addp "plugin" company-marklogic-xqy-functions-plugin))
+    (ppt . ,(funcall addp "ppt" company-marklogic-xqy-functions-ppt))
+    (prof . ,(funcall addp "prof" company-marklogic-xqy-functions-prof))
+    (rdf . ,(funcall addp "rdf" company-marklogic-xqy-functions-rdf))
+    (rdt . ,(funcall addp "rdt" company-marklogic-xqy-functions-rdt))
+    (rest . ,(funcall addp "rest" company-marklogic-xqy-functions-rest))
+    (sc . ,(funcall addp "sc" company-marklogic-xqy-functions-sc))
+    (schematron . ,(funcall addp "schematron" company-marklogic-xqy-functions-schematron))
+    (search . ,(funcall addp "search" company-marklogic-xqy-functions-search))
+    (sec . ,(funcall addp "sec" company-marklogic-xqy-functions-sec))
+    (sem . ,(funcall addp "sem" company-marklogic-xqy-functions-sem))
+    (spell . ,(funcall addp "spell" company-marklogic-xqy-functions-spell))
+    (sql . ,(funcall addp "sql" company-marklogic-xqy-functions-sql))
+    (tde . ,(funcall addp "tde" company-marklogic-xqy-functions-tde))
+    (temporal . ,(funcall addp "temporal" company-marklogic-xqy-functions-temporal))
+    (thsr . ,(funcall addp "thsr" company-marklogic-xqy-functions-thsr))
+    (tieredstorage . ,(funcall addp "tieredstorage" company-marklogic-xqy-functions-tieredstorage))
+    (trgr . ,(funcall addp "trgr" company-marklogic-xqy-functions-trgr))
+    (view . ,(funcall addp "view" company-marklogic-xqy-functions-view))
+    (xdmp . ,(funcall addp "xdmp" company-marklogic-xqy-functions-xdmp))
+    (xhtml . ,(funcall addp "xhtml" company-marklogic-xqy-functions-xhtml))
+    (xinc . ,(funcall addp "xinc" company-marklogic-xqy-functions-xinc))
+    (xp . ,(funcall addp "xp" company-marklogic-xqy-functions-xp))
+    (xs . ,(funcall addp "xs" company-marklogic-xqy-functions-xs)))))
 
-(provide 'company-ml-xqy)
+(provide 'company-marklogic-xqy)
 
-;;; company-ml-xqy.el ends here
+;;; company-marklogic-xqy.el ends here

@@ -112,7 +112,7 @@ declare function local:javascriptify($name as xs:string) as xs:string
 
 declare function local:alist-entry($p as xs:string, $type as xs:string) as xs:string
 {
-    '(' || $p || ' . ,(funcall addp "' || $p || '" company-ml-' || $type || '-functions-' || $p || '))'
+    '(' || $p || ' . ,(funcall addp "' || $p || '" company-marklogic-' || $type || '-functions-' || $p || '))'
 };
 
 declare function local:format-tables($type as xs:string, $sep as xs:string, $label as xs:string) as text()+
@@ -122,12 +122,12 @@ declare function local:format-tables($type as xs:string, $sep as xs:string, $lab
     for $p in $prefixes
     let $f := for $i in $modules/function[@lib eq $p]/name[@type eq $type] ! xs:string(.) order by $i return $i
     return (
-        text { '(defconst company-ml-' || $type || '-functions-' || $p || '&#10;' }, 
+        text { '(defconst company-marklogic-' || $type || '-functions-' || $p || '&#10;' }, 
         text { '  ''("' || fn:head($f) || '"' },
         fn:tail($f) ! text { '&#10;    "' || . || '"' },
         text { '))&#10;&#10;' }
     ),
-    text { '(defconst company-ml-' || $type || '-functions&#10;' },
+    text { '(defconst company-marklogic-' || $type || '-functions&#10;' },
     text { '  (let ((addp (lambda (prefix names)&#10;' },
     text { '                (mapcar (lambda (n) (concat prefix "' || $sep || '" n)) names))))&#10;' },
     text { '  `(' || local:alist-entry(fn:head($prefixes), $type) },

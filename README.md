@@ -1,4 +1,4 @@
-# company-ml
+# company-marklogic
 
 Company backend for MarkLogic functions.
 
@@ -13,11 +13,11 @@ your init file (AKA your `~/.emacs` file):
 
     ;; load modules
     (require 'company)
-    (require 'company-ml)
+    (require 'company-marklogic)
     
     ;; add both backends to the Company list
-    (add-to-list 'company-backends 'company-ml-sjs)
-    (add-to-list 'company-backends 'company-ml-xqy)
+    (add-to-list 'company-backends 'company-marklogic-sjs)
+    (add-to-list 'company-backends 'company-marklogic-xqy)
     
     ;; always use Company in JavaScript and XQuery modes
     (add-hook 'js-mode-hook     'company-mode)
@@ -28,20 +28,20 @@ XQuery modes, use something like the following instead, for the corresponding
 hooks:
 
     (add-hook 'js-mode-hook (lambda ()
-      (setq-local company-backends '((company-ml-sjs company-dabbrev-code)))))
+      (setq-local company-backends '((company-marklogic-sjs company-dabbrev-code)))))
     
     (add-hook 'xquery-mode-hook (lambda ()
-      (setq-local company-backends '((company-ml-xqy company-dabbrev-code)))))
+      (setq-local company-backends '((company-marklogic-xqy company-dabbrev-code)))))
 
 If you use `use-package`, you can also use the following:
 
     (use-package company
       :hook (emacs-lisp-mode js-mode xquery-mode))
     
-    (use-package company-ml
+    (use-package company-marklogic
       :config
-      (add-to-list 'company-backends 'company-ml-sjs)
-      (add-to-list 'company-backends 'company-ml-xqy))
+      (add-to-list 'company-backends 'company-marklogic-sjs)
+      (add-to-list 'company-backends 'company-marklogic-xqy))
 
 ## Screenshots
 
