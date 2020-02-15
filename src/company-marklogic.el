@@ -52,7 +52,7 @@ COMMAND, ARG and IGNORED are the arguments received from Company."
                      (backward-char))))
 
 (defun company-marklogic-sjs-prefix ()
-  "The prefix command for the MarkLogic JavaScript backend."
+  "The 'prefix' Company command for the MarkLogic JavaScript backend."
   (save-excursion
     (let ((end   (point))
           (start (point-min))
@@ -95,7 +95,7 @@ COMMAND, ARG and IGNORED are the arguments received from Company."
                      (backward-char))))
 
 (defun company-marklogic-xqy-prefix ()
-  "The prefix command for the MarkLogic XQuery backend."
+  "The 'prefix' Company command for the MarkLogic XQuery backend."
   (save-excursion
     (let ((end   (point))
           (start (point-min))
