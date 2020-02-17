@@ -2,15 +2,15 @@
 
 ;; ************************************************************************ ;;
 ;;  File:       company-marklogic.el                                        ;;
-;;  Author:     F. Georges - fgeorges.org - h2o.consulting                  ;;
+;;  Author:     F. Georges - h2o.consulting                                 ;;
 ;;  Date:       2018-12-25                                                  ;;
 ;;  Tags:                                                                   ;;
-;;      Copyright (c) 2018, 2019 Florent Georges (see end of file.)         ;;
+;;      Copyright (c) 2018, 2019, 2020 Florent Georges (see end of file.)   ;;
 ;; ------------------------------------------------------------------------ ;;
 ;;
 ;;; Package info:
 ;;
-;; Package-Requires: ((emacs "24.4") (company "0.9"))
+;; Package-Requires: ((emacs "24.5") (company "0.9"))
 ;; Keywords: company marklogic completion xquery javascript
 ;; Homepage: https://github.com/fgeorges/company-marklogic
 ;; Version: 1.0
